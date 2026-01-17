@@ -25,9 +25,13 @@
             </div>
             
             <div class="action-buttons">
-                <a href="{{ route('students.index') }}" class="btn btn-secondary">
-                    <i class="fas fa-arrow-left"></i> Back to Student List
-                </a>
+                <!-- Use Button Component -->
+                <x-button 
+                    type="secondary"
+                    href="{{ route('students.index') }}"
+                    icon="arrow-left"
+                    label="Back to Student List"
+                />
             </div>
         </div>
     </div>

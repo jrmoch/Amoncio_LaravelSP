@@ -172,6 +172,123 @@ body {
     font-size: 1.1rem;
 }
 
+/* ===== BUTTON COMPONENT STYLES ===== */
+/* ===== BUTTON STYLES - Complete Fix ===== */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 1rem;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-primary {
+    background-color: #4361ee;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #3a56d4;
+}
+
+.btn-secondary {
+    background-color: #6b7280;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #4b5563;
+}
+
+/* WARNING BUTTON - EDIT BUTTON STYLE */
+.btn-warning {
+    background-color: #f59e0b !important; /* Orange/Yellow */
+    color: white !important;
+    border: none !important;
+}
+
+.btn-warning:hover {
+    background-color: #d97706 !important; /* Darker orange */
+}
+
+.btn-success {
+    background-color: #10b981;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #0da271;
+}
+
+.btn-danger {
+    background-color: #ef4444;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #dc2626;
+}
+
+/* Button sizes */
+.btn-sm {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+}
+
+.btn-lg {
+    padding: 12px 24px;
+    font-size: 1.1rem;
+}
+
+/* Action buttons in table */
+.actions .btn {
+    margin: 0 4px;
+}
+
+/* ===== OLD ACTION BUTTON STYLE (Backup) ===== */
+.btn-action {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border-radius: var(--radius-sm);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: var(--transition);
+    margin: 0 4px;
+}
+
+.btn-action.view {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+    border: none;
+}
+
+.btn-action.edit {
+    background-color: #fef3c7 !important;  /* Yellow background */
+    color: #92400e !important;            /* Dark brown text */
+    border: none !important;
+}
+
+.btn-action:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
 /* ===== HOME PAGE ===== */
 .home-page {
     max-width: 800px;

@@ -27,12 +27,18 @@
                 </div>
                 
                 <div class="form-actions">
-                    <button type="submit" class="btn btn-primary">
-                        <i class="fas fa-save"></i> Save
-                    </button>
-                    <a href="{{ route('students.index') }}" class="btn btn-secondary">
-                        <i class="fas fa-times"></i> Cancel
-                    </a>
+                    <!-- Use Button Components -->
+                    <x-button 
+                        type="success"
+                        icon="save"
+                        label="Save"
+                    />
+                    <x-button 
+                        type="secondary"
+                        href="{{ route('students.index') }}"
+                        icon="times"
+                        label="Cancel"
+                    />
                 </div>
             </form>
         </div>
